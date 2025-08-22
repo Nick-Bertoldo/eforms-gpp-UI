@@ -338,7 +338,7 @@ function App() {
         <div className="homepage-container">
             <h1
                 style={{
-                    background: "linear-gradient(135deg, #2e7d32 0%, #4caf50 50%, #66bb6a 100%)",
+                    background: "linear-gradient(135deg, #6ba576 0%, #649a6e 50%, #598a62ff 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     backgroundClip: "text",
@@ -366,7 +366,7 @@ function App() {
             {/* Step Content */}
             {step === 0 ? (
                 <>
-                    <h2 style={{ color: "#2e7d32", fontWeight: 600 }}>Upload Your eForm Notice</h2>
+                    <h2 style={{ color: "#6ba576", fontWeight: 600 }}>Upload Your eForm Notice</h2>
                     <div className="upload-area">
                         <input
                             id="file-input"
@@ -381,10 +381,10 @@ function App() {
                             sx={{
                                 mt: 2,
                                 mb: 1,
-                                background: "linear-gradient(135deg, #4caf50 0%, #66bb6a 100%)",
+                                background: "linear-gradient(135deg, #649a6e 0%, #598a62ff 100%)",
                                 color: "white",
                                 "&:hover": {
-                                    background: "linear-gradient(135deg, #388e3c 0%, #4caf50 100%)",
+                                    background: "linear-gradient(135deg, #74b180ff 0%, #649a6e 100%)",
                                     transform: "translateY(-1px)",
                                     boxShadow: "0 4px 12px rgba(76, 175, 80, 0.3)",
                                 },
@@ -417,7 +417,7 @@ function App() {
                                     mx: "auto",
                                     textAlign: "center",
                                     fontWeight: 600,
-                                    color: "#2e7d32", // dark green for better visibility
+                                    color: "#6ba576", // dark green for better visibility
                                     fontSize: "0.95rem",
                                     letterSpacing: 1,
                                 }}
@@ -462,12 +462,12 @@ function App() {
                                                         '<span style="color:#008000;">$1</span>=<span style="color:#b75501;">$2</span>'
                                                     );
                                                     return (
-                                                        '<span style="color:#2e7d32;">' +
+                                                        '<span style="color:#6ba576;">' +
                                                         open +
                                                         tag +
                                                         "</span>" +
                                                         attrsHighlighted +
-                                                        '<span style="color:#2e7d32;">' +
+                                                        '<span style="color:#6ba576;">' +
                                                         close +
                                                         "</span>"
                                                     );
@@ -484,15 +484,15 @@ function App() {
                                     disabled={!fileContent || renderLoading}
                                     onClick={handleRenderPreview}
                                     sx={{
-                                        background: "linear-gradient(135deg, #66bb6a 0%, #81c784 100%)",
+                                        background: "linear-gradient(135deg, #598a62ff 0%, #81c784 100%)",
                                         color: "white",
                                         px: 3,
                                         py: 1,
                                         fontSize: "0.95rem",
                                         fontWeight: 600,
-                                        border: "1px solid #4caf50",
+                                        border: "1px solid #649a6e",
                                         "&:hover": {
-                                            background: "linear-gradient(135deg, #4caf50 0%, #66bb6a 100%)",
+                                            background: "linear-gradient(135deg, #649a6e 0%, #598a62ff 100%)",
                                             transform: "translateY(-1px)",
                                             boxShadow: "0 4px 12px rgba(76, 175, 80, 0.3)",
                                         },
@@ -518,14 +518,14 @@ function App() {
                                     variant="contained"
                                     onClick={handleAnalyzeNotice}
                                     sx={{
-                                        background: "linear-gradient(135deg, #4caf50 0%, #66bb6a 100%)",
+                                        background: "linear-gradient(135deg, #649a6e 0%, #598a62ff 100%)",
                                         color: "white",
                                         px: 4,
                                         py: 1.2,
                                         fontSize: "1.1rem",
                                         fontWeight: 600,
                                         "&:hover": {
-                                            background: "linear-gradient(135deg, #388e3c 0%, #4caf50 100%)",
+                                            background: "linear-gradient(135deg, #74b180ff 0%, #649a6e 100%)",
                                             transform: "translateY(-2px)",
                                             boxShadow: "0 6px 16px rgba(76, 175, 80, 0.3)",
                                         },
@@ -542,7 +542,7 @@ function App() {
                         onClose={handleRenderDialogClose}
                         maxWidth="lg"
                         fullWidth
-                        PaperProps={{ sx: { background: "linear-gradient(135deg, #f8fff8 0%, #f0f8f0 100%)" } }}
+                        PaperProps={{ sx: { background: "linear-gradient(135deg, #f8fff8 0%, #edeaeaff 100%)" } }}
                     >
                         <DialogTitle>Rendered Notice Preview</DialogTitle>
                         <DialogContent
@@ -622,7 +622,7 @@ function App() {
                                                 mb: 2,
                                                 borderRadius: 2,
                                                 boxShadow: "0 2px 8px 0 rgba(60,72,88,0.07)",
-                                                background: "#f0f8f0", // light green background
+                                                background: "#edeaeaff", // light green background
                                                 border: "1px solid #e0e7ef",
                                                 transition: "box-shadow 0.2s",
                                                 "&:hover": {
@@ -639,7 +639,7 @@ function App() {
                                             <ListItemText
                                                 primary={
                                                     <span
-                                                        style={{ fontWeight: 600, fontSize: "1rem", color: "#2e7d32" }}
+                                                        style={{ fontWeight: 600, fontSize: "1rem", color: "#6ba576" }}
                                                     >
                                                         {doc.name}
                                                     </span>
@@ -658,11 +658,11 @@ function App() {
                                                         borderRadius: 2,
                                                         textTransform: "none",
                                                         fontSize: "0.85rem",
-                                                        background: "linear-gradient(135deg, #4caf50 0%, #66bb6a 100%)",
+                                                        background: "linear-gradient(135deg, #649a6e 0%, #598a62ff 100%)",
                                                         color: "white",
                                                         "&:hover": {
                                                             background:
-                                                                "linear-gradient(135deg, #388e3c 0%, #4caf50 100%)",
+                                                                "linear-gradient(135deg, #74b180ff 0%, #649a6e 100%)",
                                                             transform: "translateY(-1px)",
                                                             boxShadow: "0 3px 8px rgba(76, 175, 80, 0.3)",
                                                         },
@@ -719,7 +719,7 @@ function App() {
                                             mb: 2,
                                             borderRadius: 2,
                                             boxShadow: "0 2px 8px 0 rgba(60,72,88,0.07)",
-                                            background: "#f0f8f0", // light green background
+                                            background: "#edeaeaff", // light green background
                                             border: "1px solid #e0e7ef",
                                             transition: "box-shadow 0.2s",
                                             "&:hover": {
@@ -735,7 +735,7 @@ function App() {
                                     >
                                         <ListItemText
                                             primary={
-                                                <span style={{ fontWeight: 600, fontSize: "1rem", color: "#2e7d32" }}>
+                                                <span style={{ fontWeight: 600, fontSize: "1rem", color: "#6ba576" }}>
                                                     {crit.id}: {crit.name}
                                                 </span>
                                             }
@@ -762,10 +762,10 @@ function App() {
                                                     borderRadius: 2,
                                                     textTransform: "none",
                                                     fontSize: "0.85rem",
-                                                    background: "linear-gradient(135deg, #4caf50 0%, #66bb6a 100%)",
+                                                    background: "linear-gradient(135deg, #649a6e 0%, #598a62ff 100%)",
                                                     color: "white",
                                                     "&:hover": {
-                                                        background: "linear-gradient(135deg, #388e3c 0%, #4caf50 100%)",
+                                                        background: "linear-gradient(135deg, #74b180ff 0%, #649a6e 100%)",
                                                         transform: "translateY(-1px)",
                                                         boxShadow: "0 3px 8px rgba(76, 175, 80, 0.3)",
                                                     },
@@ -778,7 +778,7 @@ function App() {
                                                 edge="end"
                                                 onChange={() => handleToggleCriterion(crit.id)}
                                                 checked={selectedCriteria.includes(crit.id)}
-                                                sx={{ color: "#2e7d32", ml: 1 }}
+                                                sx={{ color: "#6ba576", ml: 1 }}
                                             />
                                         </Box>
                                     </ListItem>
@@ -805,14 +805,14 @@ function App() {
                         onClose={handleDetailsClose}
                         maxWidth="sm"
                         fullWidth
-                        PaperProps={{ sx: { background: "linear-gradient(135deg, #f8fff8 0%, #f0f8f0 100%)" } }}
+                        PaperProps={{ sx: { background: "linear-gradient(135deg, #efe8e8ff 0%, #edeaeaff 100%)" } }}
                     >
                         <DialogTitle>Details</DialogTitle>
                         <DialogContent dividers>
                             {detailsItem && (
                                 <Box sx={{ fontSize: "1rem", color: "#222" }}>
                                     {detailsItem.name && (
-                                        <Typography variant="h6" sx={{ mb: 1, color: "#2e7d32" }}>
+                                        <Typography variant="h6" sx={{ mb: 1, color: "#6ba576" }}>
                                             {detailsItem.name}
                                         </Typography>
                                     )}
@@ -865,7 +865,7 @@ function App() {
                                                                     href={value}
                                                                     target="_blank"
                                                                     rel="noopener noreferrer"
-                                                                    style={{ color: "#2e7d32", wordBreak: "break-all" }}
+                                                                    style={{ color: "#6ba576", wordBreak: "break-all" }}
                                                                 >
                                                                     {value}
                                                                 </a>
@@ -941,7 +941,7 @@ function App() {
                                             mb: 2,
                                             borderRadius: 2,
                                             boxShadow: "0 2px 8px 0 rgba(60,72,88,0.07)",
-                                            background: "#f0f8f0", // match criteria/documents item bg
+                                            background: "#edeaeaff", // match criteria/documents item bg
                                             border: "1px solid #e0e7ef",
                                             transition: "box-shadow 0.2s",
                                             "&:hover": {
@@ -958,7 +958,7 @@ function App() {
                                         <ListItemText
                                             primary={
                                                 <span
-                                                    style={{ fontWeight: 600, fontSize: "0.98rem", color: "#2e7d32" }}
+                                                    style={{ fontWeight: 600, fontSize: "0.98rem", color: "#6ba576" }}
                                                 >
                                                     {patch.name}
                                                 </span>
@@ -986,10 +986,10 @@ function App() {
                                                     borderRadius: 2,
                                                     textTransform: "none",
                                                     fontSize: "0.85rem",
-                                                    background: "linear-gradient(135deg, #4caf50 0%, #66bb6a 100%)",
+                                                    background: "linear-gradient(135deg, #649a6e 0%, #598a62ff 100%)",
                                                     color: "white",
                                                     "&:hover": {
-                                                        background: "linear-gradient(135deg, #388e3c 0%, #4caf50 100%)",
+                                                        background: "linear-gradient(135deg, #74b180ff 0%, #649a6e 100%)",
                                                         transform: "translateY(-1px)",
                                                         boxShadow: "0 3px 8px rgba(76, 175, 80, 0.3)",
                                                     },
@@ -1002,7 +1002,7 @@ function App() {
                                                 edge="end"
                                                 onChange={() => handleTogglePatch(idx)}
                                                 checked={selectedPatches.includes(idx)}
-                                                sx={{ color: "#2e7d32", ml: 1 }}
+                                                sx={{ color: "#6ba576", ml: 1 }}
                                             />
                                         </Box>
                                     </ListItem>
@@ -1029,14 +1029,14 @@ function App() {
                         onClose={handlePatchDetailsClose}
                         maxWidth="sm"
                         fullWidth
-                        PaperProps={{ sx: { background: "linear-gradient(135deg, #f8fff8 0%, #f0f8f0 100%)" } }}
+                        PaperProps={{ sx: { background: "linear-gradient(135deg, #f8fff8 0%, #edeaeaff 100%)" } }}
                     >
                         <DialogTitle>Patch Details</DialogTitle>
                         <DialogContent dividers>
                             {patchDetailsItem && (
                                 <Box sx={{ fontSize: "1rem", color: "#222" }}>
                                     {patchDetailsItem.name && (
-                                        <Typography variant="h6" sx={{ mb: 1, color: "#2e7d32" }}>
+                                        <Typography variant="h6" sx={{ mb: 1, color: "#6ba576" }}>
                                             {patchDetailsItem.name}
                                         </Typography>
                                     )}
@@ -1114,12 +1114,12 @@ function App() {
                                                                         '<span style="color:#008000;">$1</span>=<span style="color:#b75501;">$2</span>'
                                                                     );
                                                                     return (
-                                                                        '<span style="color:#2e7d32;">' +
+                                                                        '<span style="color:#6ba576;">' +
                                                                         open +
                                                                         tag +
                                                                         "</span>" +
                                                                         attrsHighlighted +
-                                                                        '<span style="color:#2e7d32;">' +
+                                                                        '<span style="color:#6ba576;">' +
                                                                         close +
                                                                         "</span>"
                                                                     );
@@ -1198,10 +1198,10 @@ function App() {
                         variant="contained"
                         onClick={handleNextStep}
                         sx={{
-                            background: "linear-gradient(135deg, #4caf50 0%, #66bb6a 100%)",
+                            background: "linear-gradient(135deg, #649a6e 0%, #598a62ff 100%)",
                             color: "white",
                             "&:hover": {
-                                background: "linear-gradient(135deg, #388e3c 0%, #4caf50 100%)",
+                                background: "linear-gradient(135deg, #74b180ff 0%, #649a6e 100%)",
                                 transform: "translateY(-1px)",
                                 boxShadow: "0 4px 12px rgba(76, 175, 80, 0.3)",
                             },
@@ -1253,10 +1253,10 @@ function App() {
                             changeStep(2); // Go to "Select Patches" step
                         }}
                         sx={{
-                            background: "linear-gradient(135deg, #4caf50 0%, #66bb6a 100%)",
+                            background: "linear-gradient(135deg, #649a6e 0%, #598a62ff 100%)",
                             color: "white",
                             "&:hover": {
-                                background: "linear-gradient(135deg, #388e3c 0%, #4caf50 100%)",
+                                background: "linear-gradient(135deg, #74b180ff 0%, #649a6e 100%)",
                                 transform: "translateY(-1px)",
                                 boxShadow: "0 4px 12px rgba(76, 175, 80, 0.3)",
                             },
@@ -1305,10 +1305,10 @@ function App() {
                             changeStep(3); // Go to "Review & Download" step
                         }}
                         sx={{
-                            background: "linear-gradient(135deg, #4caf50 0%, #66bb6a 100%)",
+                            background: "linear-gradient(135deg, #649a6e 0%, #598a62ff 100%)",
                             color: "white",
                             "&:hover": {
-                                background: "linear-gradient(135deg, #388e3c 0%, #4caf50 100%)",
+                                background: "linear-gradient(135deg, #74b180ff 0%, #649a6e 100%)",
                                 transform: "translateY(-1px)",
                                 boxShadow: "0 4px 12px rgba(76, 175, 80, 0.3)",
                             },
@@ -1329,7 +1329,7 @@ function App() {
                             mx: "auto",
                             textAlign: "center",
                             fontWeight: 600,
-                            color: "#2e7d32",
+                            color: "#6ba576",
                             fontSize: "0.95rem",
                             letterSpacing: 1,
                         }}
@@ -1373,12 +1373,12 @@ function App() {
                                                 '<span style="color:#008000;">$1</span>=<span style="color:#b75501;">$2</span>'
                                             );
                                             return (
-                                                '<span style="color:#2e7d32;">' +
+                                                '<span style="color:#6ba576;">' +
                                                 open +
                                                 tag +
                                                 "</span>" +
                                                 attrsHighlighted +
-                                                '<span style="color:#2e7d32;">' +
+                                                '<span style="color:#6ba576;">' +
                                                 close +
                                                 "</span>"
                                             );
@@ -1425,15 +1425,15 @@ function App() {
                                 setRenderDialogOpen(true);
                             }}
                             sx={{
-                                background: "linear-gradient(135deg, #66bb6a 0%, #81c784 100%)",
+                                background: "linear-gradient(135deg, #598a62ff 0%, #81c784 100%)",
                                 color: "white",
                                 px: 3,
                                 py: 1,
                                 fontSize: "0.95rem",
                                 fontWeight: 600,
-                                border: "1px solid #4caf50",
+                                border: "1px solid #649a6e",
                                 "&:hover": {
-                                    background: "linear-gradient(135deg, #4caf50 0%, #66bb6a 100%)",
+                                    background: "linear-gradient(135deg, #649a6e 0%, #598a62ff 100%)",
                                     transform: "translateY(-1px)",
                                     boxShadow: "0 4px 12px rgba(76, 175, 80, 0.3)",
                                 },
@@ -1494,14 +1494,14 @@ function App() {
                         variant="contained"
                         disabled={!patchedXml}
                         sx={{
-                            background: "linear-gradient(135deg, #4caf50 0%, #66bb6a 100%)",
+                            background: "linear-gradient(135deg, #649a6e 0%, #598a62ff 100%)",
                             color: "white",
                             px: 4,
                             py: 1.2,
                             fontSize: "1.1rem",
                             fontWeight: 600,
                             "&:hover": {
-                                background: "linear-gradient(135deg, #388e3c 0%, #4caf50 100%)",
+                                background: "linear-gradient(135deg, #74b180ff 0%, #649a6e 100%)",
                                 transform: "translateY(-2px)",
                                 boxShadow: "0 6px 16px rgba(76, 175, 80, 0.3)",
                             },
@@ -1607,7 +1607,7 @@ function App() {
                 onClose={handleValidationDialogClose}
                 maxWidth="md"
                 fullWidth
-                PaperProps={{ sx: { background: "linear-gradient(135deg, #f8fff8 0%, #f0f8f0 100%)" } }}
+                PaperProps={{ sx: { background: "linear-gradient(135deg, #f8fff8 0%, #edeaeaff 100%)" } }}
             >
                 <DialogTitle>
                     <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -1744,10 +1744,10 @@ function App() {
                             variant="contained"
                             onClick={handleDownloadValidationReport}
                             sx={{
-                                background: "linear-gradient(135deg, #4caf50 0%, #66bb6a 100%)",
+                                background: "linear-gradient(135deg, #649a6e 0%, #598a62ff 100%)",
                                 color: "white",
                                 "&:hover": {
-                                    background: "linear-gradient(135deg, #388e3c 0%, #4caf50 100%)",
+                                    background: "linear-gradient(135deg, #74b180ff 0%, #649a6e 100%)",
                                     transform: "translateY(-1px)",
                                     boxShadow: "0 4px 12px rgba(76, 175, 80, 0.3)",
                                 },

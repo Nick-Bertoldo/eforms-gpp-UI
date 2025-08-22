@@ -8,7 +8,7 @@
 
 /* Add full-body background */
 body {
-    background: linear-gradient(135deg, #f8fff8 0%, #e8f5e8 100%);
+    background: rgb(235, 230, 230) ;
     margin: 0;
     min-height: 100vh;
 }
@@ -20,10 +20,10 @@ body {
     transition: filter 300ms;
 }
 .logo:hover {
-    filter: drop-shadow(0 0 2em #4CAF50aa);
+    filter: drop-shadow(0 0 2em #4B7553aa);
 }
 .logo.sustainability:hover {
-    filter: drop-shadow(0 0 2em #66BB6Aaa);
+    filter: drop-shadow(0 0 2em #578760aa);
 }
 
 @keyframes logo-spin {
@@ -64,7 +64,7 @@ body {
 
 /* Make the stepper (Tabs) buttons background a bit gray/white-ish and improve contrast */
 .MuiTabs-root {
-    background: linear-gradient(135deg, #f0f8f0 0%, #e8f5e8 50%, #dff2df 100%);
+    /* background: linear-gradient(135deg, #f0f8f0 0%, #e8f5e8 50%, #dff2df 100%); */
     border-radius: 12px;
     box-shadow: 0 2px 8px 0 rgba(76, 175, 80, 0.15);
     border: 1px solid rgba(76, 175, 80, 0.1);
@@ -72,7 +72,7 @@ body {
 
 .MuiTab-root {
     background: linear-gradient(135deg, #ffffff 0%, #f8fff8 100%);
-    color: #2e7d32;
+    color: #649a6e;
     font-weight: 600;
     border-radius: 8px;
     min-height: 48px;
@@ -82,7 +82,7 @@ body {
 }
 
 .MuiTab-root.Mui-selected {
-    background: linear-gradient(135deg, #4caf50 0%, #66bb6a 100%);
+    background: linear-gradient(135deg, #4B7553aa 0%, #578760 100%);
     color: #ffffff !important;
     font-weight: 700 !important;
     box-shadow: 0 4px 12px 0 rgba(76, 175, 80, 0.3);
@@ -96,14 +96,14 @@ body {
 }
 
 .MuiTabs-indicator {
-    background: linear-gradient(90deg, #4caf50, #66bb6a);
+    background: linear-gradient(90deg, #4B7553aa, #578760);
     height: 3px;
     border-radius: 2px;
 }
 
 /* Additional sustainability styling */
 .homepage-container {
-    background: linear-gradient(135deg, #f8fff8 0%, #e8f5e8 100%);
+    background: linear-gradient(135deg, rgb(245, 240, 240) 0%, rgb(235, 230, 230) 100%);
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(76, 175, 80, 0.1);
     padding: 2rem;
@@ -111,13 +111,13 @@ body {
 }
 
 .homepage-container h1 {
-    color: #2e7d32;
+    color: #649a6e;
     text-shadow: 0 2px 4px rgba(76, 175, 80, 0.1);
     margin-bottom: 1rem;
 }
 
 .homepage-container .description {
-    color: #388e3c;
+    color: #6ba576;
     font-size: 1.1rem;
     margin-bottom: 2rem;
 }
@@ -145,7 +145,7 @@ body {
 }
 
 .MuiDialogTitle-root {
-    color: #2e7d32;
+    color: #649a6e;
     font-weight: 600;
     background: linear-gradient(135deg, #f8fff8 0%, #f0f8f0 100%);
     border-bottom: 1px solid rgba(76, 175, 80, 0.1);
@@ -165,11 +165,11 @@ body {
 
 /* Checkbox styling */
 .MuiCheckbox-root {
-    color: #2e7d32 !important;
+    color: #649a6e !important;
 }
 
 .MuiCheckbox-root.Mui-checked {
-    color: #2e7d32 !important;
+    color: #649a6e !important;
 }
 
 /* Paper styling */
